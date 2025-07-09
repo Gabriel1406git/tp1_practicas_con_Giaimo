@@ -1,0 +1,93 @@
+#cervFondo{
+    width: 100%;
+    height: auto;}
+.imagenFondo, {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+}
+ h1 {
+    position: absolute;
+    top: 0.5%;
+    left: 35%;
+    color: rgb(244, 204, 85);
+    z-index: 1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+h2 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: black;
+    text-shadow: 0 0 3px white;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 10px;
+}
+
+p {
+    position:absolute;
+    top: 30%;
+    left: 15%;
+    color: black;
+    z-index: 1;
+    text-align: justify;
+    width: 900px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.431);
+    background-size: 1000px;
+    
+}
+h3{
+    position:absolute;
+    top: 50%;
+    left: 25%;
+    color: black;
+    z-index: 1;
+    text-align: justify;
+    width: 550px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.431);
+}
+ul{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    color: black;
+    z-index: 1;
+    text-align: justify;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.431);
+}
+h4{
+    position:absolute;
+    top: 80%;
+    left: 30%;
+    color: black;
+    z-index: 1;
+    text-align: justify;
+    width: 350px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.431);
+}
+table {
+    position: absolute;
+    top: 89%;
+    left: 32%;
+    color: black;
+    z-index: 1;
+    text-align: justify;
+    width: 300px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.431);
+}
+.Botones {
+    position: absolute;
+    z-index: 1;
+    top: 90;
+    left: 10;
+}

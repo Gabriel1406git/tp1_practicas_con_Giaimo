@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pagina de gabriel</title> <!--Titulo de mi pagina-->
+    <link rel="stylesheet" href="gabriel.css"> <!--Enlazo mi archivo CSS-->
+    <link rel="icon" href="mifoto.jpg" type="image/pjg"> <!--Le agrego un icono-->
+</head>
+<body id="body_gabriel">
+    <a href="/indexg1.html"><button>Volver</button></a> <!--Boton para volver a la pagina principal-->
+    
+    <video autoplay muted loop id="video-fondo-gabriel"> <!-- autoplay es para que se reproduzca el video , muted es para silenciarlo, loop es para que se repruduzca en bucle-->
+
+        <source src="VideoDeFondoGabriel.mp4" type="video/mp4"> <!-- source sirve para indicar la fuente del video, src sirve para buscar donde esta alojado el video, type es el tipo de archivo en este caso video/mp4-->
+
+        Tu navegador no soporta este video.
+    </video>
+
+    <div id="opacidad"></div> <!-- lo uso para crear una capa encima -->
+
+    <h1 id="titulo"> Bienvenidos a mi pagina de presentación </h1> <!-- Titulo de mi pagina-->
+
+    <div id="tarjeta_presentacion"  > <!-- Bloque que uso como tarjeta de presentación-->
+        <img class="mifoto" src="mifoto.jpg" alt="ups, algo salio mal :("> <!--Imagen-->
+
+        <h1 id="h1_tarjeta" >Rivero Gabriel</h1> <!--Titulo de tarjeta de presentacion-->
+
+        <h2 id="h2_tarjeta"> Un poco de mi </h2> <!--Subtitulo de tarjeta de presentación-->
+
+        <p class="p_tarjeta"> <!--Parrafo de Tarjeta de presentación-->
+            Tengo 20 años, mi cumpleaños es el 14/06. Terminé la secundaria en el 2022 en la Secundaria Técnica N° 1 de Florencio Varela como técnico electromecánico. Tengo una enfermedad autoinmune llamada <a href="https://www.mayoclinic.org/es/diseases-conditions/behcets-disease/symptoms-causes/syc-20351326" target="_blank" title="CLICK AQUI PARA MAS INFORMACIÓN">Behcet</a><!--Link para mas información--> y voy a la iglesia a misa casi todos los domingos.
+            <br>
+            <h3 class="h3_tarjeta">Cosas que me gustan</h3> <!--Subtitulo h3-->
+
+            <ul class="ul_gabriel"> <!--Lista desordenada-->
+                <li class="li_gabriel">Peliculas</li> <!--Elemento de lista-->
+                <li class="li_gabriel">Series</li>
+                <li class="li_gabriel">Anime</li>
+                <li class="li_gabriel">Juegos</li>
+                
+            </ul>
+            <ul class="ul_gabriel ul_2">
+                <li class="li_gabriel">Andar en bici</li>
+                <li class="li_gabriel">Comprar plantas</li>
+                <li class="li_gabriel">Hacer jercicio</li>
+                <li class="li_gabriel">Milanesa con pure</li>
+            </ul>
+        </p>
+        <p class="p_tarjeta"> <!--Parrafo de Tarjeta de presentación-->
+            Siempre me ha interesado la informática, aunque no contaba con conociemtos del tema. Decidí unirme a esta carrera porque forma parte del mundo de la informática y porque, me pareció la mejor manera de empezar de cero.
+        </p>
+
+    </div>
+
+    <div class="div_tabla_periodica"> <!--Bloque que contiene mi tabla-->
+        <table class="tabla_periodica"> <!--Tabla-->
+            <tr id="tablatitulo"> <!--Table row (fila de tabla)-->
+
+                <th colspan="18">Tabla periódica de los elementos</th> <!--Bloques de encabezados-->
+                
+            </tr>
+
+            <tr id="tablalinea1"> <!--Table row (fila de tabla)-->
+                <td class="td_no_metales"> <p class="p_arriba1">1.00794</p><p class="p_arriba2">1312.0</p> H <p class="p_abajo">Hidrógeno</p> </td> <!--Bloques de datos-->
+                
+                <td class="espacioVacio"></td> <!--Bloque vacio-->
+                <td class="espacioVacio" colspan="10" rowspan="3"> </td> <!--Bloques vacios y le sumo los bloques vacios de abajo-->
+                <td class="espacioVacio" colspan="5"></td> <!--Bloques vacios-->
+
+                   
+
+                <td class="td_gases_nobles"><p class="p_arriba1">4.002602</p><p class="p_arriba2">2372.3</p> He <p class="p_abajo">Helio</p> </td><!--Bloques de datos-->
+            </tr> 
+
+            <tr id="tablalinea2"><!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">6.941</p><p class="p_arriba2">520.2</p>Li<p class="p_abajo">Litío</p> </td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">9.012182</p><p class="p_arriba2">890.5</p>Be<p class="p_abajo">Berilio</p> </td>
+
+                <td class="td_metaloides"><p class="p_arriba1">10.811</p><p class="p_arriba2">820.6</p>B<p class="p_abajo">Boro</p></td>
+
+                <td class="td_no_metales"><p class="p_arriba1">12.0107</p><p class="p_arriba2">1086.5</p>C<p class="p_abajo">Carbono</p> </td>
+
+                <td class="td_no_metales"><p class="p_arriba1">14.0067</p><p class="p_arriba2">1402.3</p>N<p class="p_abajo">Nitrogeno</p> </td>
+
+                <td class="td_no_metales"><p class="p_arriba1">15.9994</p><p class="p_arriba2">1313.9</p>O<p class="p_abajo">Oxigeno</p> </td>
+
+                <td class="td_halogenos"><p class="p_arriba1">18.998403</p><p class="p_arriba2">1681.0</p>F<p class="p_abajo">Flúor</p></td>
+
+                <td class="td_gases_nobles"><p class="p_arriba1">20.1797</p><p class="p_arriba2">2080.7</p>Ne<p class="p_abajo">Neón</p></td>
+            </tr>
+
+            <tr id="tablalinea3"> <!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">22.98976</p><p class="p_arriba2">495.8</p>Na<p class="p_abajo">Sodio</p></td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">24.3050</p><p class="p_arriba2">737.7</p>Mg<p class="p_abajo">Magnesio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">26.98153</p><p class="p_arriba2">577.5</p>Al<p class="p_abajo">Aluminio</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">28.0855</p><p class="p_arriba2">786.5</p>Si<p class="p_abajo">Silicio</p</td>
+
+                <td class="td_no_metales"><p class="p_arriba1">30.97696</p><p class="p_arriba2">1011.8</p>P<p class="p_abajo">Fósforo</p></td>
+
+                <td class="td_no_metales"><p class="p_arriba1">32.065</p><p class="p_arriba2">999.6</p>S<p class="p_abajo">Azufre</p></td>
+
+                <td class="td_halogenos"><p class="p_arriba1">35.453</p><p class="p_arriba2">1251.2</p>Cl<p class="p_abajo">Cloro</p></td>
+
+                <td class="td_gases_nobles"><p class="p_arriba1">39.948</p><p class="p_arriba2">1520.6</p>Ar<p class="p_abajo">Argón</p></td>
+
+            </tr>
+
+            <tr id="tablalinea4"><!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">39.0983</p><p class="p_arriba2">418.8</p>K<p class="p_abajo">Potasio</p></td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">40.078</p><p class="p_arriba2">589.8</p>Ca<p class="p_abajo">Calcio</p></td>
+                <td class="td_metales_de_transicion"><p class="p_arriba1">44.95591</p><p class="p_arriba2">633.1</p>Sc<p class="p_abajo">Escandio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">47.867</p><p class="p_arriba2">658.8</p>Ti<p class="p_abajo">Titanio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">50.9415</p><p class="p_arriba2">650.9</p>V<p class="p_abajo">Vanadio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">51.9962</p><p class="p_arriba2">652.9</p>Cr<p class="p_abajo">Cromo</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">54.93804</p><p class="p_arriba2">717.3</p>Mn<p class="p_abajo">Manganeso</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">55.845</p><p class="p_arriba2">762.5</p>Fe<p class="p_abajo">Hierro</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">58.93319</p><p class="p_arriba2">760.4</p>Co<p class="p_abajo">Cobalto</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">58.6934</p><p class="p_arriba2">737.1</p>Ni<p class="p_abajo">Níquel</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">63.546</p><p class="p_arriba2">745.5</p>Cu<p class="p_abajo">Cobre</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">65.38</p><p class="p_arriba2">906.4</p>Zn<p class="p_abajo">Zinc</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">69.723</p><p class="p_arriba2">578.8</p>Ga<p class="p_abajo">Galio</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">72.64</p><p class="p_arriba2">762.0</p>Ge<p class="p_abajo">Germanio</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">74.92160</p><p class="p_arriba2">947.0</p>As<p class="p_abajo">Arsénico</p></td>
+
+                <td class="td_no_metales"><p class="p_arriba1">78.96</p><p class="p_arriba2">941.0</p>Se<p class="p_abajo">Selenio</p></td>
+
+                <td class="td_halogenos"><p class="p_arriba1">79.904</p><p class="p_arriba2">1139.9</p>Br<p class="p_abajo">Bromo</p></td>
+                
+                <td class="td_gases_nobles"><p class="p_arriba1">83.798</p><p class="p_arriba2">1350.8</p>Kr<p class="p_abajo">Kriptón</p></td>
+            </tr>
+
+            <tr id="tablalinea5"><!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">85.4678</p><p class="p_arriba2">403.0</p>Rb<p class="p_abajo">Rubidio</p></td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">87.62</p><p class="p_arriba2">549.5</p>Sr<p class="p_abajo">Estroncio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">88.90585</p><p class="p_arriba2">600.0</p>Y<p class="p_abajo">Itrio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">91.224</p><p class="p_arriba2">640.1</p>Zr<p class="p_abajo">Zirconio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">92.90638</p><p class="p_arriba2">652.1</p>Nb<p class="p_abajo">Niobio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">95.96</p><p class="p_arriba2">684.3</p>Mo<p class="p_abajo">Molibdeno</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">98</p><p class="p_arriba2">702.0</p>Tc<p class="p_abajo">Tecnecio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">101.07</p><p class="p_arriba2">710.2</p>Ru<p class="p_abajo">Rutenio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">102.9055</p><p class="p_arriba2">719.7</p>Rh<p class="p_abajo">Rodio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">87.62</p><p class="p_arriba2">549.5</p>Pd<p class="p_abajo">Paladio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">106.42</p><p class="p_arriba2">804.4</p>Ag<p class="p_abajo">Plata</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">112.441</p><p class="p_arriba2">867.8</p>Cd<p class="p_abajo">Cadmio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">114.818</p><p class="p_arriba2">558.3</p>In<p class="p_abajo">Indio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">118.710</p><p class="p_arriba2">708.6</p>Sn<p class="p_abajo">Estaño</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">121.760</p><p class="p_arriba2">834.0</p>Sb<p class="p_abajo">Antimonio</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">127.60</p><p class="p_arriba2">869.3</p>Te<p class="p_abajo">Telurio</p></td>
+
+                <td class="td_halogenos"><p class="p_arriba1">126.9044</p><p class="p_arriba2">1008.4</p>I<p class="p_abajo">Yodo</p></td>
+
+                <td class="td_gases_nobles"><p class="p_arriba1">132.293</p><p class="p_arriba2">1170.4</p>Xe<p class="p_abajo">Xenón</p></td>
+
+            </tr>
+        
+            <tr id="tablalinea6"><!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">132.9054</p><p class="p_arriba2">375.7</p>Cs<p class="p_abajo">Cesio</p></td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">137.327</p><p class="p_arriba2">502.9</p>Ba<p class="p_abajo">Bario</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">174.9668</p><p class="p_arriba2">523.5</p>Lu<p class="p_abajo">Lutecio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">178.49</p><p class="p_arriba2">658.5</p>Hf<p class="p_abajo">Hafnio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">180.9478</p><p class="p_arriba2">761.0</p>Ta<p class="p_abajo">Tantalio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">132.293</p><p class="p_arriba2">770.0</p>W<p class="p_abajo">Wolframio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">186.207</p><p class="p_arriba2">760.0</p>Re<p class="p_abajo">Renio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">190.23</p><p class="p_arriba2">840.0</p>Os<p class="p_abajo">Osmio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">192.217</p><p class="p_arriba2">880.0</p>Ir<p class="p_abajo">Iridio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">195.084</p><p class="p_arriba2">870.0</p>Pt<p class="p_abajo">Platino</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">196.9665</p><p class="p_arriba2">890.1</p>Au<p class="p_abajo">Oro</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">200.59</p><p class="p_arriba2">1007.1</p>Hg<p class="p_abajo">Mercurío</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">204.3833</p><p class="p_arriba2">589.4</p>Tl<p class="p_abajo">Talio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">207.2</p><p class="p_arriba2">715.6</p>Pb<p class="p_abajo">Plomo</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">208.9804</p><p class="p_arriba2">703.0</p>Bi<p class="p_abajo">Bismuto</p></td>
+
+                <td class="td_metaloides"><p class="p_arriba1">210</p><p class="p_arriba2">812.1</p>Po<p class="p_abajo">Polonio</p></td>
+
+                <td class="td_halogenos"><p class="p_arriba1">210</p><p class="p_arriba2">890.0</p>At<p class="p_abajo">Astato</p></td>
+
+                <td class="td_gases_nobles"><p class="p_arriba1">220</p><p class="p_arriba2">1037.0</p>Rn<p class="p_abajo">Radón</p></td>
+            </tr>
+
+            <tr id="tablalinea7"><!--Table row (fila de tabla)-->
+                <td class="td_metales_alcalinos"><p class="p_arriba1">223</p><p class="p_arriba2">380.0</p>Fr<p class="p_abajo">Francio</p></td>
+
+                <td class="td_alcalinoterreos"><p class="p_arriba1">226</p><p class="p_arriba2">509.3</p>Ra<p class="p_abajo">Radio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">262</p><p class="p_arriba2">470.0</p>Lr<p class="p_abajo">Laurencio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">261</p><p class="p_arriba2">580.0</p>Rf<p class="p_abajo">Rutherfodio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">262</p><p class="p_arriba2">---</p>Db<p class="p_abajo">Dubnio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">266</p><p class="p_arriba2">---</p>Sg<p class="p_abajo">Seaborgio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">264</p><p class="p_arriba2">---</p>Bh<p class="p_abajo">Bohrio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">277</p><p class="p_arriba2">---</p>Hs<p class="p_abajo">Hassio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">268</p><p class="p_arriba2">---</p>Mt<p class="p_abajo">Meitnerio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">271</p><p class="p_arriba2">---</p>Ds<p class="p_abajo">Darmstatio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">272</p><p class="p_arriba2">---</p>Rg<p class="p_abajo">Roentgenio</p></td>
+
+                <td class="td_metales_de_transicion"><p class="p_arriba1">285</p><p class="p_arriba2">---</p>Cn<p class="p_abajo">Copernicio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">284</p><p class="p_arriba2">---</p>Nh<p class="p_abajo">Nihonio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">289</p><p class="p_arriba2">---</p>Fl<p class="p_abajo">Flerovio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">288</p><p class="p_arriba2">---</p>Mc<p class="p_abajo">Moscovio</p></td>
+
+                <td class="td_otros_metales"><p class="p_arriba1">292</p><p class="p_arriba2">---</p>Lv<p class="p_abajo">Livermorio</p></td>
+
+                <td class="td_halogenos"><p class="p_arriba1">294</p><p class="p_arriba2">---</p>Ts<p class="p_abajo">Teneso</p></td>
+
+                <td class="td_gases_nobles"><p class="p_arriba1">294</p><p class="p_arriba2">---</p>Og<p class="p_abajo">Oganesón</p></td>
+            </tr>
+
+            <tr><!--Table row (fila de tabla) fila vacia para separar-->
+                <td class="espacioVacio"></td>
+            </tr>
+
+            <tr id="tablalinea8" class="tabladeabajo"> <!--Table row (fila de tabla)-->
+                <td class="espacioVacio" colspan="4" rowspan="2"></td> <!--Bloque de datos vacios -->
+                <td class="td_lantanidos"><p class="p_arriba1">138.9054</p><p class="p_arriba2">538.1</p>La<p class="p_abajo">Lantano</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">140.116</p><p class="p_arriba2">534.4</p>Ce<p class="p_abajo">Cerio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">140.9076</p><p class="p_arriba2">527.0</p>Pr<p class="p_abajo">Praseodimio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">144.242</p><p class="p_arriba2">533.1</p>Nd<p class="p_abajo">Neodimio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">145</p><p class="p_arriba2">540</p>Pm<p class="p_abajo">Prometio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">150.36</p><p class="p_arriba2">544.5</p>Sm<p class="p_abajo">Samario</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">151.964</p><p class="p_arriba2">547.1</p>Eu<p class="p_abajo">Europio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">157.25</p><p class="p_arriba2">593.4</p>Gd<p class="p_abajo">Gadolinio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">158.9253</p><p class="p_arriba2">565.8</p>Tb<p class="p_abajo">Terbío</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">162.500</p><p class="p_arriba2">573.0</p>Dy<p class="p_abajo">Disprosio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">164.9303</p><p class="p_arriba2">581.0</p>Ho<p class="p_abajo">Holmio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">167.259</p><p class="p_arriba2">589.3</p>Er<p class="p_abajo">Erbio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">168.9342</p><p class="p_arriba2">596.7</p>Tm<p class="p_abajo">Tulio</p></td>
+
+                <td class="td_lantanidos"><p class="p_arriba1">173.054</p><p class="p_arriba2">603.4</p>Yb<p class="p_abajo">Iterbio</p></td>
+
+            </tr>
+
+            <tr id="tablalinea9" class=" tabladeabajo"> <!--Table row (fila de tabla)-->
+                <td class="td_actinidos"><p class="p_arriba1">227</p><p class="p_arriba2">499.0</p>Ac<p class="p_abajo">Actinio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">232.0380</p><p class="p_arriba2">587.0</p>Th<p class="p_abajo">Torio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">231.0358</p><p class="p_arriba2">568.0</p>Pa<p class="p_abajo">Protactinio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">238.0289</p><p class="p_arriba2">597.6</p>U<p class="p_abajo">Uranio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">237</p><p class="p_arriba2">604.5</p>Np<p class="p_abajo">Neptunio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">244</p><p class="p_arriba2">584.7</p>Pu<p class="p_abajo">Plutonio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">243</p><p class="p_arriba2">578.0</p>Am<p class="p_abajo">Americio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">247</p><p class="p_arriba2">581.0</p>Cm<p class="p_abajo">Curio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">247</p><p class="p_arriba2">601.0</p>Bk<p class="p_abajo">Berkelio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">251</p><p class="p_arriba2">608.0</p>Cf<p class="p_abajo">Californio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">252</p><p class="p_arriba2">619.0</p>Es<p class="p_abajo">Einstenio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">257</p><p class="p_arriba2">627.0</p>Fm<p class="p_abajo">Fermio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">258</p><p class="p_arriba2">635.0</p>Md<p class="p_abajo">Mendelevio</p></td>
+
+                <td class="td_actinidos"><p class="p_arriba1">259</p><p class="p_arriba2">642.0</p>No<p class="p_abajo">Nobelio</p></td>
+
+            </tr> 
+
+        </table>
+        <table class="tabla_periodica"> <!--Bloque que contiene la tabla de definicion de elementos-->
+            <tr class="td_metales_alcalinos"> <td>metales alcalinos</td></tr> <!--Bloques de definición de elementos-->
+            <tr class="td_alcalinoterreos"><td>alcalinotérreos</td></tr> 
+            <tr class="td_otros_metales"><td>otros metales</td></tr> 
+            <tr class="td_metales_de_transicion"><td>metales de transición</td></tr> 
+            <tr class="td_lantanidos"><td>lantánidos</td></tr> 
+            <tr class="td_actinidos"><td>actínidos</td></tr> 
+            <tr class="td_metaloides"><td>metaloides</td></tr> 
+            <tr class="td_no_metales"><td>no metales</td></tr> 
+            <tr class="td_halogenos"><td>halógenos</td></tr>
+            <tr class="td_gases_nobles"><td>gases nobles</td></tr>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+ 

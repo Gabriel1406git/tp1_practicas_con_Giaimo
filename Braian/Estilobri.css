@@ -1,0 +1,80 @@
+body {
+  background-image: url(/Braian/imgbri/fondo1bri.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+.volver {
+  font-size: 20px;
+  display: inline-block;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 20px 50px;
+  border: 2px solid #52057b;
+  border-radius: 10px;
+}
+.volver:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0px #52057b;
+  }
+  50% {
+    box-shadow: 0 0 25px #52057b, 0 0 50px #892cdc;
+  }
+  100% {
+    box-shadow: 0 0 0px #52057b;
+  }
+}
+.title1, .title2 {
+  display: inline-block;
+  padding: 10px 20px; 
+  border: 2px solid transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow:
+      0 0 10px rgb(216, 231, 3),
+      0 0 20px rgb(235, 7, 7),
+      0 0 30px rgb(93, 5, 209);
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+      
+}
+
+.contenedor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .contenedor-img img {
+    max-width: 180px;
+    height: auto;
+    border: 1px solid #e2c20d;
+    margin-top: 300px;
+    transition: transform 0.3s ease;
+}
+.contenedor-img img:hover {
+  transform: scale(1.2)
+}
+.list-text {
+  margin-top: 280px;
+  padding: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}

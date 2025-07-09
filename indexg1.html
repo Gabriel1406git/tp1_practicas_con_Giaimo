@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleg1.css">
+    <link rel="icon" href="./imagenesPract/BraianSola.png">
+    <title>Grupo1</title>
+</head>
+<body >
+    <div class="group">
+        <video autoplay muted loop playsinline class="fpc">
+            <source src="./videoPract/fondoPC.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+        <h1>Grupo Numero One</h1>
+            <div class="opc">
+             <ul>
+                <li> <a href="./Gaby/GabrielRivero.html"> <img class="ga" src="./imagenesPract/mifoto.jpg" alt="Gaby"></a> </li>
+                <li> <a href="./Braian/Brian.html"><img class="ba" src="./Braian/imgbri/portada.jpg" alt="Braian"></a> </li>
+                <li> <a href="./Nacho/indexN2.html"><img class="na" src="./imagenesPract/Nachoman.jpg" alt="Nacho"></a></li>
+                <li> <a href="./Enri.html"><img class="ea" src="./imagenesPract/Enri1.jpg" alt="Enri"></a></li>
+             </ul>
+             </div>
+    </div>
+
+    <audio id="musErg" src="./audio/Precision.m4a.mp3" preload="auto"></audio>
+    <script>
+    function sonidoclick(event){
+        event.preventDefault();
+        const sonido = document.getElementById("musErg");
+        const destino = event.currentTarget.href;
+
+        sonido.play().then(() => {
+            const duracion = sonido.duration || 1; 
+            setTimeout(() => {
+                window.location.href = destino;
+            }, duracion * 1000);
+        }).catch((error) => {
+            console.error("No se pudo reproducir el sonido:", error);
+            window.location.href = destino; 
+        });
+    }
+        window.onload=function(){
+            const enlace = document.querySelectorAll('.opc a');
+            enlace.forEach(enlace => {
+                enlace.addEventListener('click', sonidoclick);
+        });
+
+    };
+    </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+
+/*CSS de Gabriel*/
+#body_gabriel{
+    margin: 0; /* es el espacio externo de un elemento se usa para separar un elemento de otro elemento o en este caso el eliminar el espacio entre elementos*/
+    padding: 0; /* es el espacio dentro del elemento es decir el espacio entre el contenido y el borde que lo contiene*/
+    height: 100%; /* ancho total que ocupara */
+     /*overflow: hidden; evita barras de deslizamiento si el contenido es muy grande */
+    font-family: dancing; /* defino la tipografia que voy a usar*/
+    font-weight: 100; /* establezco el grosor minimo o maximo posible del caracter (depende del tipo de tipografia, el grosor minimo o maximo que tiene)*/
+} 
+
+/*font-family, font-weight, color, margin, padding, etc., son propiedades de css. estas se utilizan para definir estilos específicos de los elementos.*/
+
+/*defino mi tipografia descargada*/
+/*son declaraciones especiales que se usan para definir estilos avanzados. por ejemplo, @font-face es una regla que permite importar y definir fuentes personalizadas. estas reglas suelen comenzar con el símbolo @*/
+@font-face { 
+    font-family: dancing; /* nombre de la tipografia*/
+    src: url(Dancing_Script_Gochi_Hand/Dancing_Script/DancingScript-VariableFont_wght.ttf) format(truetype); /*Busco la ubicación de la tipografia (fonts)*/
+}
+
+/* estilo para el video de fondo */
+#video-fondo-gabriel {
+    position: fixed; /* posiciona el video de manera fija en la pantala */
+    width: 100%; /* ocupa el ancho completo de la pantala */
+    height: 100%; /* ocupa el alto completo de la pantala */
+    top: 0; /* alinea la parte superior del video con la parte superior de la pantala */
+    left: 0; /* alinea el lado izquierdo del video con el borde izquierdo de la pantala */
+    margin: 0; /* elimina espacios fuera del bloque del video */
+
+    object-fit: cover; /* ajusta el video para que ocupe todo el espacio disponible sin deformarse */
+    z-index: -2; /*permite crear capas y colocar el video detrás de otros elementos (capas negativas) */
+}
+
+/*object-fit, background, y otros, son funciones específicas para aplicar configuraciones avanzadas. por ejemplo, object-fit: cover ajusta el contenido de un objeto (como una imagen o video) dentro de su contenedor sin deformarlo.*/
+
+/* estilo para el filtro de opacidad sobre el video */
+#opacidad {
+    width: 100%; /* ocupa el ancho completo de la pantala */
+    height: 100%; /* ocupa el alto completo de la pantala */
+    top: 0; /* comienza desde la parte superior */
+    left: 0; /* comienza desde el lado izquierdo */
+    background: rgba(255, 0, 255, 0.1); /* coloco un fondo negro semitransparente (40% de opacidad) */
+    z-index: -1; /* lo posiciona detrás de otros elementos pero por encima del video */
+    position: fixed; /* mantiene la capa de opacidad fija sobre el video */
+}
+
+/* estilo del título */
+#titulo {
+    color: white; /* color del texto*/
+    text-align: center; /* centra el texto horizontalmente */
+    margin-top: 15px; /* margen de arriba*/
+    font-size: 60px;
+}
+
+
+
+/* Tarjeta de presentación */
+#tarjeta_presentacion {
+    background-color: #8800ff6f; /* fondo con opacidad ) */
+    box-shadow: 0 0 12px #8800ffff; /* sombra*/
+    text-align: center; /* centra el contenido */
+    width: 800px; /* ancho fijo de la tarjeta */
+    height: 1050px; /* altura fija de la tarjeta */
+    margin: auto; /* centra horizontalmente la tarjeta */
+    margin-top: 0; /* sin margen arriba */
+    padding: 10px ; /* espaciado interno de 10 píxeles */
+    border-radius: 8px; /* esquinas redondeadas con un radio de 8 píxeles */
+    box-sizing: border-box; /* incluye padding y borde dentro de las dimensiones totales para mantener el width y height asignados*/
+}
+
+/* imagen dentro de la tarjeta */
+.mifoto {
+    width: 150px; /* ancho fijo de 100 píxeles */
+    border-radius: 150%; /* redondea la imagen  */
+    margin: 0; /* sin margen externo */
+    padding: 0; /* sin espacio interno */
+}
+
+
+/* encabezado dentro de la tarjeta */
+#h1_tarjeta {
+    color: #000f; /* color de texto*/
+    letter-spacing: 2px; /*espaciado adicional entre cada caracter*/
+    margin: 0px; /* espaciado de 5 píxeles alrededor */
+    font-size: 60px; /*Tamaño del texto*/
+
+    padding: 0; /* sin espacio interno */
+}
+
+
+/* subencabezado dentro de la tarjeta */
+#h2_tarjeta {
+    color: #111f; /* color de texto */
+    margin: 0; /* sin margen externo */
+    font-size: 50px; /*Tamaño del texto*/
+}
+
+ /* subencabezado dentro de la tarjeta */
+.h3_tarjeta{
+    color: #111f; /* color de texto */
+    margin: 0; /* sin margen externo */
+    font-size: 40px; /*Tamaño del texto*/
+}
+
+.ul_gabriel{
+
+    display: inline-block;
+
+}
+
+
+/* subencabezado dentro de la tarjeta */
+.li_gabriel{
+    text-align: left; /*Indico que el texto inicie desde la izquierda*/
+    font-size: 30px; /*Tamaño del texto*/
+}
+
+/*parrafo de la tarjeta*/
+.p_tarjeta{
+    margin: 10px;
+    color: #111f; /*color de texto*/
+    text-align: justify; /* mantiene el principio y final de cada linea de texto*/
+    font-size: 35px; /*defino el tamaño del texto*/
+}
+
+
+/*Link que quiero que resalte*/
+a{
+    font-weight: bolder; /*ultimo grosor de la tipografia */
+    color: #000f; /*color del texto*/
+    font-weight: 900; /*defino el grosor del texto*/
+    text-decoration: underline 2px; /* le agrego una linea debajo del texto con un grosor de 2px*/
+}
+
+/* :hover es un selector que aplica estilos específicos cuando el cursor pasa por encima del elemento.*/
+a:hover{
+    color: #009f; /*color del texto*/
+}
+ 
+/*Le doy estilo a mi tabla y sus elementos*/
+table,td,th{
+    border: 1px solid #000f; /*Le doy un borde de 1px solido y negro*/
+
+    padding: 5px ; /*Le doy un margen interno de 5px*/
+    border-collapse: collapse; /*Uno los bordes de cada elemento*/
+    font-family: none; /*Le saco la tipografia*/
+    font-weight: bolder;  /*Le doy al caracter el mayor grosor posible*/
+}
+
+/*Le doy un estilo especifo a los datos*/
+td{
+    width: 50px; /*Le defino un tamaño al bloque*/
+    height: 50px;
+
+    padding: 0;/*Elimino el margen interior*/
+}
+
+/*Espacios vacios de la tabla*/
+.espacioVacio{
+    border: none; /*Elimino los bordes de los espacios vacios*/
+    height: 10px; /*Le difino la altura y solo afecta un bloque*/
+}
+
+/*Bloque que contiene a la tabla*/
+.div_tabla_periodica{ 
+    margin: 20px auto; /*Le defino un margen de 20px arriba y abajo y le doy un margen automatico a los costados*/
+    text-align: center; /*Centro la tabla*/
+
+    width: 100%; /*Le indico que ocupe todo el bloque*/
+    height: 100%;
+    
+}
+
+/*Le doy estilo a las tablas*/
+.tabla_periodica{
+    display: inline-table; /*Indico que se coloquen una alado de la otra*/
+    background-color: rgba(255, 255, 255, 0.2); /*Le doy un fondo blanco con opacidad del 20%*/
+}
+
+/*Le doy stilo a los parrafos de infomación de los elementos*/
+.p_arriba1{
+    text-align: left; /*Indico que el texto inicie desde la para izquierda deñ bloque*/
+    font-size: 12px; /*Le defino un tamaño al caracter*/
+
+    margin: 0; /*Le elimino el margen externo e interno del elemento*/
+    padding: 0;
+
+}
+
+/*Le doy stilo a los parrafos de infomación de los elementos*/
+.p_arriba2{
+    text-align: left; /*Indico que el texto inicie desde la para izquierda deñ bloque*/
+    font-size: 9px;/*Le defino un tamaño al caracter*/
+
+    padding: 0; /*Le elimino el margen externo e interno del elemento*/
+    margin: 0;
+
+}
+
+/*Le doy stilo a los parrafos de infomación de los elementos*/
+.p_abajo{
+    text-align: left; /*Indico que el texto inicie desde la para izquierda deñ bloque*/
+    font-size: 10px; /*Le defino un tamaño al caracter*/
+
+    margin: 0; /*Le elimino el margen externo e interno del elemento*/
+    padding-bottom: 2px; /*Le agrego un margen interno de la parte inferior  de 2px*/
+
+}
+
+/*Le defino stilo de colores a los bloques td*/
+.td_metales_alcalinos{
+    background: linear-gradient(#fc7b12,#ffbb83,#fc7b12); /* le doy un color con un stilo de degrade*/
+
+}
+
+.td_alcalinoterreos{
+    background: linear-gradient(to left,#ebba0a,#ffe586,#ebba0a); /* le doy un color con un stilo de degrade*/
+
+}
+
+.td_otros_metales{
+    background: linear-gradient(to left,#ffff00,#ffffaa,#ffff00); /* le doy un color con un stilo de degrade*/
+
+}
+
+.td_metales_de_transicion{
+    background: linear-gradient(#92ec02,#e1ffb1,#92ec02); /* le doy un color con un stilo de degrade*/
+
+}
+
+.td_lantanidos{
+    background: linear-gradient(to left,#32ff20,#94ff8a,#32ff20); /* le doy un color con un stilo de degrade*/
+
+}
+
+.td_actinidos{
+    background: linear-gradient(#00792e,#87ffb5,#00792e); /* le doy un color con un stilo de degrade*/
+
+}
+.td_metaloides{
+    background: linear-gradient(#00ff95,#acf8d9,#00ff95); /* le doy un color con un stilo de degrade*/
+
+}
+.td_no_metales{
+    background: linear-gradient(#70218f,#db7fff,#6b188b); /* le doy un color con un stilo de degrade*/
+
+}
+.td_halogenos{
+    background: linear-gradient(#ff008c,#ff84c8,#ff008c); /* le doy un color con un stilo de degrade*/
+}
+.td_gases_nobles{
+    background: linear-gradient(#002fff,#73b7f7,#002fff); /* le doy un color con un stilo de degrade*/
+
+}
+

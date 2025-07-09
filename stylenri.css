@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+
+}
+caption{
+    font-size: 80px;
+    color: rgb(29, 65, 208);
+    text-shadow: 0px 3px greenyellow;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.exit{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-bottom: 10px;
+    border-radius: 0%;
+    color: rgb(6, 240, 41);
+    background-color: rgba(220, 20, 23, 0.257);
+}
+.gr{
+    color: rgb(0, 0, 0);
+    font-style:unset;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-shadow: 5px 2px 4px rgb(235, 153, 29);
+}
+
+.video{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.erg {
+    color: rgb(0, 0, 0);
+    font-size: 150px;
+    text-shadow: rgb(63, 209, 80) 2px 3px;
+}
+.leyenda{
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 40px;
+}
+
+.up{
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+}
+.ti{
+    list-style: none;
+    font-size: 50px;
+    color: rgb(48, 146, 206);
+    text-shadow: 1px 2px rgb(218, 31, 203);
+}
+img{
+    display: flex;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+}
+.tbl {
+    width: 80%;
+    max-width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    border: 2px solid rgba(3, 63, 244, 0.658);
+    border-collapse: collapse;
+    margin: auto;
+    word-wrap: break-word;
+    table-layout: auto;
+} 
+.tbl th, .tbl td{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    word-break: break-word;
+
+}
+
+button{
+    border-radius: 60%;
+    background-color: rgb(227, 157, 18);
+}
+.pie{
+    display: flex;
+    align-items: center;
+}

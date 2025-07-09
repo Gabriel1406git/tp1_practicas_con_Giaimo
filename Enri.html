@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylenri.css">
+    <link rel="icon" href="./imagenesPract/Superman.png">
+    <title>Gutierrez Enrique</title>
+</head>
+<body>
+    <a  href="/indexg1.html"><button class="exit">Volver</button></a>
+    <div class="up">
+         <h1 class="erg">Gutierrez Enrique</h1>
+         <img src="./imagenesPract/EnriPres.jpg" >
+         <ul class="leyenda"> 
+            <li class="ti">Me agrada</li>
+            <li>Futbol con amigos</li>
+            <li>Asado o juntadas</li>
+            <li>Tiempo familiares</li>
+            <li>Pasear mientras viajo</li>
+            <li>Hacer deportes o ejercicio </li>
+            <li>aunque también escuchar musica y ver series...</li>
+            </ul>
+    </div>
+
+    <div class="middle">
+        <table class="tbl">
+            <caption> Un Poco de lo que escucho</caption>
+            <tr><th>Grupo</th><th colspan="2">Cancion</th><th></th></tr>
+            <tr><td class="gr">Ramones</td>
+                <td>I Wanna be sedated</td>
+                <td><button onclick="ReproducP()">Rep/Paus</button>
+                <audio id="RM" src="./audio/RAmones-IWannaBeSedated.unknown"></audio></td>
+            </tr>
+            <tr><td class="gr">Molotov</td>
+                <td>Diseño Rolas</td>
+                <td><button onclick="ReproducirPausa()">Rep/Paus</button>
+                <audio id="Molotov" src="./audio/Molotoy-DiseñoRolas.unknown"></audio></td>
+            </tr>
+            <tr><td class="gr">Daniela Mercuri</td>
+                <td>Swing da cor</td>
+                <td><button onclick="ReproducirPaus()">Rep/Paus</button>
+                <audio id="Mercuri" src="./audio/DanielaMerc-SwingDaCor.unknown"></audio></td>
+            </tr>
+            <tr><td class="gr">Beast Boy</td>
+                <td>Intergalactic</td>
+                <td><button onclick="ReproducirPau()">Rep/Paus</button>
+                <audio id="BBoy" src="./audio/intergalacticBB.mp3"></audio></td>
+            </tr>
+            <tr><td class="gr">Cerati</td>
+                <td>Adios</td>
+                <td><button onclick="ReproPausa()">Rep/Paus</button>
+                <audio id="Adios" src="./audio/Adios_Cerati.mp3"></audio></td>
+            </tr>
+            <tr><td class="gr">Mano Negra</td>
+                <td>Mala Vida</td>
+                <td><button onclick="ReproducirP()">Rep/Paus</button>
+                <audio id="MV" src="./audio/ManoNegra-MalaVida.mp3"></audio></td>
+            </tr>
+        </table>  
+    </div>
+    <footer>
+        <div class="pie">
+             <img src="./imagenesPract/quilmes.png" alt="">
+             <span class="leyenda">Mí ciudad... donde crecí, estudio y tengo mis amistades. La que representa mí lugar de pertenencia.</span>
+
+            </div>
+    </footer>
+    <video autoplay muted loop playsinline class="video" controls src="./videoPract/PanalVerde.mp4"></video>
+
+    <script>
+        function ReproducirPausa(){
+            const audio=document.getElementById('Molotov');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        function ReproducirPaus(){
+            const audio=document.getElementById('Mercuri');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        function ReproducirPau(){
+            const audio=document.getElementById('BBoy');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        function ReproPausa(){
+            const audio=document.getElementById('Adios');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        function ReproducirP(){
+            const audio=document.getElementById('MV');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+        function ReproducP(){
+            const audio=document.getElementById('RM');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
