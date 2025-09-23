@@ -1,7 +1,7 @@
 #cervFondo{
     width: 100%;
     height: auto;}
-.imagenFondo, {
+.imagenFondo {
     position: absolute;
     top: 50%;
     left: 50%;
